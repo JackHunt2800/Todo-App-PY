@@ -2,3 +2,4 @@ Flask
 psycopg2-binary
 Flask_sqlalchemy
 flask_cors
+python-dotenv

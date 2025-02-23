@@ -4,6 +4,8 @@
 
   # Run with Docker
   docker-compose up --build
-  
+
+Database=todo_db
+
 #Run backend tests
 docker-compose exec backend python -m unittest discover -s tests

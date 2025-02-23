@@ -27,7 +27,7 @@ const TaskList = ({ tasks, refreshTasks }:TaskListProps) => {
 
   return (
     <div className="taskContainer">
-      {tasks.map((task:unknown) => (
+      {!tasks?(tasks?.map((task:unknown) => (
         <div key={task?.id} className="card">
           <div className="title">{task?.title}</div>
           <div className="description">{task?.description}</div>
@@ -35,7 +35,7 @@ const TaskList = ({ tasks, refreshTasks }:TaskListProps) => {
             Done
           </button>
         </div>
-      ))}
+      ))):(<div>No tasks</div>)}
     </div>
   );
 };
